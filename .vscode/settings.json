@@ -21,12 +21,7 @@
   "typescript.preferences.importModuleSpecifier": "non-relative",
 
   // ESLint
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "eslint.workingDirectories": [{ "mode": "auto" }],
 
   // Tailwind CSS

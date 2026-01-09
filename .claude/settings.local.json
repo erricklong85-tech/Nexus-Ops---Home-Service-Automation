@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:\\\\Users\\\\erric_sgphddc\\\\Downloads\\\\nexus-ops---home-service-automation\" status)",
+      "Bash(if exist .env.local del .env.local)",
+      "Bash(npm install:*)",
+      "Bash(npm run typecheck:*)",
+      "Bash(find:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run test:run:*)",
+      "Bash(npm run test:coverage:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nchore: initial project configuration and tooling setup\n\n- Add package.json with React 19, TypeScript 5.8, Vite 6.2\n- Configure ESLint with TypeScript and React plugins\n- Configure Prettier for consistent code formatting\n- Set up Tailwind CSS 3.4 with PostCSS\n- Configure Vitest with React Testing Library\n- Enable TypeScript strict mode with path aliases\n- Add .env.example template for environment variables\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run format:check:*)",
+      "Bash(npm run format:*)"
+    ]
+  }
+}

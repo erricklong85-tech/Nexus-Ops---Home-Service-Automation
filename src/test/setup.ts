@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import { expect, afterEach, vi } from 'vitest';
+import { afterEach, vi } from 'vitest';
 import { cleanup } from '@testing-library/react';
 
 // Cleanup after each test
@@ -8,7 +8,7 @@ afterEach(() => {
 });
 
 // Mock window.scrollTo
-global.scrollTo = vi.fn();
+global.scrollTo = vi.fn() as unknown as typeof window.scrollTo;
 
 // Mock IntersectionObserver
 global.IntersectionObserver = class IntersectionObserver {
@@ -19,7 +19,7 @@ global.IntersectionObserver = class IntersectionObserver {
   takeRecords() {
     return [];
   }
-} as any;
+} as unknown as typeof IntersectionObserver;
 
 // Mock matchMedia
 Object.defineProperty(window, 'matchMedia', {

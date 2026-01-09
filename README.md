@@ -12,6 +12,7 @@ A modern, high-performance landing page built with React 19, TypeScript, and Tai
 ## Features
 
 ### Design & UX
+
 - **Modern Glassmorphism UI** with smooth animations via Framer Motion
 - **Fully Responsive Design** optimized for all device sizes
 - **Dark Mode Aesthetic** with brand-specific color palette
@@ -20,6 +21,7 @@ A modern, high-performance landing page built with React 19, TypeScript, and Tai
 - **Testimonial Carousel** with auto-rotation
 
 ### Technical Stack
+
 - **React 19.2** with TypeScript for type safety
 - **Vite 6.2** for blazing-fast development and optimized builds
 - **Tailwind CSS 3.4** for utility-first styling
@@ -28,6 +30,7 @@ A modern, high-performance landing page built with React 19, TypeScript, and Tai
 - **Vitest** with React Testing Library for comprehensive testing
 
 ### Pages & Sections
+
 - **Home Page** with hero, value proposition, social proof, and CTA
 - **Website Design** service page
 - **Paid Ads** service page
@@ -36,6 +39,7 @@ A modern, high-performance landing page built with React 19, TypeScript, and Tai
 - **Dynamic Navigation** with service mega menu
 
 ### Developer Experience
+
 - **ESLint + Prettier** for code quality and consistency
 - **TypeScript Strict Mode** with comprehensive type definitions
 - **Component Architecture** with clean separation of concerns
@@ -45,18 +49,18 @@ A modern, high-performance landing page built with React 19, TypeScript, and Tai
 
 ## Tech Stack
 
-| Category | Technology |
-|----------|-----------|
-| Framework | React 19.2.0 |
-| Language | TypeScript 5.8.3 |
-| Build Tool | Vite 6.2.0 |
-| Styling | Tailwind CSS 3.4.17 |
-| Animation | Framer Motion 12.24.4 |
-| Icons | Lucide React 0.562.0 |
-| Testing | Vitest 1.6.1 |
+| Category        | Technology                    |
+| --------------- | ----------------------------- |
+| Framework       | React 19.2.0                  |
+| Language        | TypeScript 5.8.3              |
+| Build Tool      | Vite 6.2.0                    |
+| Styling         | Tailwind CSS 3.4.17           |
+| Animation       | Framer Motion 12.24.4         |
+| Icons           | Lucide React 0.562.0          |
+| Testing         | Vitest 1.6.1                  |
 | Testing Library | @testing-library/react 16.1.0 |
-| Linting | ESLint 9.18.0 |
-| Formatting | Prettier 3.4.2 |
+| Linting         | ESLint 9.18.0                 |
+| Formatting      | Prettier 3.4.2                |
 
 ## Getting Started
 
@@ -68,23 +72,28 @@ A modern, high-performance landing page built with React 19, TypeScript, and Tai
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/erricklong85-tech/Nexus-Ops---Home-Service-Automation.git
 cd Nexus-Ops---Home-Service-Automation
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install --legacy-peer-deps
 ```
-*Note: `--legacy-peer-deps` flag is needed for React 19 peer dependency compatibility.*
+
+_Note: `--legacy-peer-deps` flag is needed for React 19 peer dependency compatibility._
 
 3. Create environment file (optional):
+
 ```bash
 cp .env.example .env.local
 ```
 
 4. Start development server:
+
 ```bash
 npm run dev
 ```
@@ -93,20 +102,20 @@ Visit `http://localhost:5173` to see the app running.
 
 ## Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server with hot reload |
-| `npm run build` | Build for production in `dist/` directory |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run ESLint to check code quality |
-| `npm run lint:fix` | Auto-fix ESLint issues where possible |
-| `npm run format` | Format code with Prettier |
-| `npm run format:check` | Check if code is properly formatted |
-| `npm run typecheck` | Run TypeScript type checking |
-| `npm run test` | Run tests in watch mode |
-| `npm run test:ui` | Open Vitest UI for interactive testing |
-| `npm run test:run` | Run tests once (CI mode) |
-| `npm run test:coverage` | Generate test coverage report |
+| Script                  | Description                               |
+| ----------------------- | ----------------------------------------- |
+| `npm run dev`           | Start development server with hot reload  |
+| `npm run build`         | Build for production in `dist/` directory |
+| `npm run preview`       | Preview production build locally          |
+| `npm run lint`          | Run ESLint to check code quality          |
+| `npm run lint:fix`      | Auto-fix ESLint issues where possible     |
+| `npm run format`        | Format code with Prettier                 |
+| `npm run format:check`  | Check if code is properly formatted       |
+| `npm run typecheck`     | Run TypeScript type checking              |
+| `npm run test`          | Run tests in watch mode                   |
+| `npm run test:ui`       | Open Vitest UI for interactive testing    |
+| `npm run test:run`      | Run tests once (CI mode)                  |
+| `npm run test:coverage` | Generate test coverage report             |
 
 ## Project Structure
 
@@ -153,6 +162,7 @@ nexus-ops---home-service-automation/
 - Test user interactions, not implementation details
 
 Run tests before committing:
+
 ```bash
 npm run test:run
 npm run test:coverage
@@ -177,9 +187,9 @@ npm run test:coverage
 
 Create a `.env.local` file based on `.env.example`:
 
-| Variable | Required | Description | Example |
-|----------|----------|-------------|---------|
-| `GEMINI_API_KEY` | No | API key for Gemini AI features | `AIzaSy...` |
+| Variable         | Required | Description                    | Example     |
+| ---------------- | -------- | ------------------------------ | ----------- |
+| `GEMINI_API_KEY` | No       | API key for Gemini AI features | `AIzaSy...` |
 
 Get your Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
@@ -192,6 +202,7 @@ Get your Gemini API key from [Google AI Studio](https://aistudio.google.com/app/
 3. Follow prompts to deploy
 
 Or use the Vercel Dashboard:
+
 - Import your GitHub repository
 - Vercel will auto-detect Vite configuration
 - Add environment variables in project settings
@@ -206,6 +217,7 @@ Or use the Vercel Dashboard:
 ### Other Platforms
 
 Build the production bundle:
+
 ```bash
 npm run build
 ```

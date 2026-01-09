@@ -94,7 +94,7 @@ export default function Hero({ onOpenContact }: PageProps) {
                 <div className="h-full bg-brand-500 w-full animate-shimmer" />
               </div>
               <div className="text-xs text-gray-500">
-                {'>'}  Lead Source: Google LSA
+                {'>'} Lead Source: Google LSA
                 <br />
                 {'>'} Parsing contact info...
                 <br />

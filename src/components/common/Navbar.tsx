@@ -56,7 +56,10 @@ export default function Navbar({ onOpenContact, onNavigate, currentPage }: Navba
       onMouseLeave={() => setServicesOpen(false)}
     >
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between relative z-50">
-        <button onClick={() => onNavigate('home')} className="flex items-center gap-2 focus:outline-none">
+        <button
+          onClick={() => onNavigate('home')}
+          className="flex items-center gap-2 focus:outline-none"
+        >
           <div className="w-8 h-8 bg-gradient-to-tr from-white to-gray-500 rounded-lg flex items-center justify-center">
             <span className="text-black font-bold text-lg">N</span>
           </div>
@@ -106,10 +109,7 @@ export default function Navbar({ onOpenContact, onNavigate, currentPage }: Navba
           </button>
         </div>
 
-        <button
-          className="md:hidden text-white"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
+        <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>
       </div>
@@ -204,9 +204,7 @@ export default function Navbar({ onOpenContact, onNavigate, currentPage }: Navba
             >
               Services{' '}
               <ChevronDown
-                className={`w-4 h-4 transition-transform ${
-                  mobileServicesOpen ? 'rotate-180' : ''
-                }`}
+                className={`w-4 h-4 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`}
               />
             </button>
             {mobileServicesOpen && (

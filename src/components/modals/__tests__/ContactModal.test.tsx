@@ -34,7 +34,9 @@ describe('ContactModal', () => {
     expect(screen.getByPlaceholderText('john@company.com')).toBeInTheDocument();
     expect(screen.getByPlaceholderText('Acme Construction Inc.')).toBeInTheDocument();
     expect(screen.getByPlaceholderText('www.example.com')).toBeInTheDocument();
-    expect(screen.getByPlaceholderText('Tell us about your current bottlenecks...')).toBeInTheDocument();
+    expect(
+      screen.getByPlaceholderText('Tell us about your current bottlenecks...')
+    ).toBeInTheDocument();
   });
 
   it('renders submit button', () => {

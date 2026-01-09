@@ -12,23 +12,23 @@ This project and everyone participating in it is governed by respect and profess
 
 Before creating bug reports, please check existing issues as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible:
 
-* **Use a clear and descriptive title** for the issue
-* **Describe the exact steps which reproduce the problem** in as much detail as possible
-* **Provide specific examples** to demonstrate the steps
-* **Describe the behavior you observed** after following the steps
-* **Explain which behavior you expected to see instead and why**
-* **Include screenshots** if possible
-* **Include your environment details** (OS, Node version, browser, etc.)
+- **Use a clear and descriptive title** for the issue
+- **Describe the exact steps which reproduce the problem** in as much detail as possible
+- **Provide specific examples** to demonstrate the steps
+- **Describe the behavior you observed** after following the steps
+- **Explain which behavior you expected to see instead and why**
+- **Include screenshots** if possible
+- **Include your environment details** (OS, Node version, browser, etc.)
 
 ### Suggesting Enhancements
 
 Enhancement suggestions are tracked as GitHub issues. Create an issue and provide the following information:
 
-* **Use a clear and descriptive title**
-* **Provide a step-by-step description of the suggested enhancement**
-* **Provide specific examples to demonstrate the steps**
-* **Describe the current behavior** and **explain which behavior you expected to see instead**
-* **Explain why this enhancement would be useful**
+- **Use a clear and descriptive title**
+- **Provide a step-by-step description of the suggested enhancement**
+- **Provide specific examples to demonstrate the steps**
+- **Describe the current behavior** and **explain which behavior you expected to see instead**
+- **Explain why this enhancement would be useful**
 
 ### Pull Requests
 
@@ -44,17 +44,20 @@ Enhancement suggestions are tracked as GitHub issues. Create an issue and provid
 ### Setting Up Your Development Environment
 
 1. Fork and clone the repository:
+
 ```bash
 git clone https://github.com/YOUR-USERNAME/Nexus-Ops---Home-Service-Automation.git
 cd Nexus-Ops---Home-Service-Automation
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install --legacy-peer-deps
 ```
 
 3. Create a branch:
+
 ```bash
 git checkout -b feature/your-feature-name
 # or
@@ -62,6 +65,7 @@ git checkout -b fix/your-bug-fix
 ```
 
 4. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -76,6 +80,7 @@ npm run dev
 - Export types from `src/types/index.ts`
 
 Example:
+
 ```typescript
 interface MyComponentProps {
   title: string;
@@ -95,6 +100,7 @@ export default function MyComponent({ title, onClick }: MyComponentProps) {
 - Extract reusable logic into custom hooks
 
 Example:
+
 ```typescript
 // Good
 export default function Button({ text, onClick }: ButtonProps) {
@@ -129,6 +135,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/) specifica
 ```
 
 **Types:**
+
 - `feat`: A new feature
 - `fix`: A bug fix
 - `docs`: Documentation only changes
@@ -139,6 +146,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/) specifica
 - `chore`: Changes to build process or auxiliary tools
 
 **Examples:**
+
 ```
 feat(hero): add animated background particles
 
@@ -156,6 +164,7 @@ chore(deps): update framer-motion to v12.24.4
 All new features and bug fixes should include tests.
 
 **Running Tests:**
+
 ```bash
 # Run tests in watch mode
 npm run test
@@ -168,12 +177,14 @@ npm run test:coverage
 ```
 
 **Writing Tests:**
+
 - Use React Testing Library for component tests
 - Test user behavior, not implementation details
 - Aim for meaningful tests, not just coverage numbers
 - Mock external dependencies
 
 Example:
+
 ```typescript
 import { describe, it, expect } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -235,6 +246,7 @@ npm run lint && npm run typecheck && npm run test:run && npm run format:check
 - `chore/description` - Build/tooling changes
 
 Examples:
+
 - `feature/add-dark-mode-toggle`
 - `fix/navbar-mobile-overflow`
 - `docs/update-contributing-guide`

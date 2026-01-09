@@ -7,7 +7,7 @@ import HomePage from '@pages/HomePage';
 import PaidAdsPage from '@pages/PaidAdsPage';
 import SeoPage from '@pages/SeoPage';
 import WebsiteDesignPage from '@pages/WebsiteDesignPage';
-import { PageType } from '@/types';
+import type { PageType } from '@/types';
 
 export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);

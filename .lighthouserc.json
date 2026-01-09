@@ -3,10 +3,7 @@
     "collect": {
       "startServerCommand": "npm run preview",
       "startServerReadyPattern": "Local:.*http://localhost:.*",
-      "url": [
-        "http://localhost:4173",
-        "http://localhost:4173/"
-      ],
+      "url": ["http://localhost:4173", "http://localhost:4173/"],
       "numberOfRuns": 3
     },
     "assert": {
